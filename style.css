@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.navbar ul{
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    padding: 0;
+    align-items: center;
+}
+.navbar ul li {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  list-style-type: none;
+  margin: 0 20px;
+  border-radius: 25px;
+}
+.navbar ul li:hover{
+    background-color: #ffbf00;
+}
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+}
+.logo {
+    padding: 0 !important;
+    background-color: #f1f1f1 !important;
+    width: 7.5%;
+    margin: 0 !important;
+    align-items: center !important;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    margin: -7px 0;
+}
+.presentation {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+
+}
+.presentation .slogan {
+    background-image: url(/resources/pexels-pixabay-50597.jpg);
+    background-size: cover;
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.presentation .slogan h1 {
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.cards .card{
+    width: 33.3%;
+}
