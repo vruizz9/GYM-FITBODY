@@ -25,6 +25,7 @@ body {
 }
 .navbar ul li:hover{
     background-color: #ffbf00;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
 }
 .navbar ul li a {
     color: #000;
@@ -34,15 +35,16 @@ body {
     font-style: normal;
 }
 .logo {
-    padding: 0 !important;
-    background-color: #f1f1f1 !important;
     width: 7.5%;
+    padding: 0 !important;
     margin: 0 !important;
     align-items: center !important;
+    background-color: #000 !important;
+    border-radius: 0  !important;
 }
 .logo img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 10vh;
     margin: -7px 0;
 }
 .presentation {
@@ -72,9 +74,58 @@ body {
     font-style: normal;
 }
 .cards {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: relative;
+    top: -110px;
 }
-.cards .card{
-    width: 33.3%;
+.cards .card {
+    width: 20%;
+    height: 26vh;
+    border-radius: 15px;
+    border: 5px solid #f1f1f1;
+    box-shadow: 4px 4px 10px rgba(0,0,0,25%);
+    background-size: cover;
+    background-color: rgb(255, 191, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: grayscale(100%) brightness(0.3);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.cards .card .content {
+    height: 26.1vh;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    color: #f1f1f1;
+    margin: 0;
+    align-content: center;
+}
+.cards .card a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    font-style: normal;
+    transition-duration: .5s;
+    transition: all .5s;
+    color: #f1f1f1;
+}
+.cards .card:hover {
+    background-blend-mode: soft-light;
+    filter: grayscale(50%);
+    transition: all .5s;
+    transition-duration: .5s;
+}
+.content:hover {
+    color: #000 !important;
+    transition: all .5s;
+    transition-duration: .5s;
+}
+.cards .card a:hover {
+    color: #000 !important;
+    transition: all .5s;
+    transition-duration: .5s;
 }
