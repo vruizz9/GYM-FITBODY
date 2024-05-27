@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitBody</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="/resources/Logotipo Gimnasio Favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/808781cc1c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,48 +30,38 @@
         <!-- Contenido principal de la página login -->
     <main>
         <!-- Formulario de login -->
-        <form>
-            <!-- Nombre de usuario -->
-            <label for="name">Nombre de usuario:</label>
-            <input type="name" required>
-            <!-- Contraseña -->
-            <label for="username">Contraseña:</label>
-            <p><a href="#">¿Olvidó la contraseña?</a>
-                <input type="password" required>
-            <div id="lower">
-                <input type="checkbox"><label class="check" for="checkbox">Mantener la sesión conectada</label>
-                <!-- Botón enviar  -->
-                <input type="submit" value="Login" required>
+        <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="Nombre de usuario"/>
+                <input type="password" placeholder="Contraseña"/>
+                <button>login</button>
+                <p class="message">¿Aún no está registrado? <a href="/register.html">Crear una cuenta</a></p>
+              </form>
             </div>
-        </form>
-        <div>
-            <p>¿Aún no tiene una cuenta?</p>
-            <a href="/register.html"><button>REGISTRO</button></a>
         </div>
     </main>
     <!-- Pie de página -->
     <footer>
-        <div>
-            <img src="" alt="Logo FitBody">
+        <div class="logo2">
+            <img src="/resources/Logotipo Gimnasio.png" alt="Logo FitBody">
         </div>
-        <div>
-            <h4>Contactenos</h4>
-            <p>Correo</p>
-            <p>Teléfono</p>
-            <p>Dirección</p>
+        <div class="colum">
+            <p>example@gmail.com</p>
+            <p>3216549870</p>
+            <p>Cll 100 #28 - 29</p>
         </div>
-        <div>
-            <h4>Redes Sociales</h4>
-            <p>Facebook</p>
-            <p>X</p>
-            <p>Instagram</p>
+        <div class="colum">
+            <a href="#"><img style="filter: brightness(0) saturate(100%) invert(82%) sepia(38%) saturate(4981%) hue-rotate(1deg) brightness(106%) contrast(102%);" src="/resources/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img style="filter: brightness(0) saturate(100%) invert(82%) sepia(38%) saturate(4981%) hue-rotate(1deg) brightness(106%) contrast(102%);" src="/resources/x-twitter.svg" alt="Twitter"></a>
+            <a href="#"><img style="filter: brightness(0) saturate(100%) invert(82%) sepia(38%) saturate(4981%) hue-rotate(1deg) brightness(106%) contrast(102%);" src="/resources/instagram.svg" alt="Instagram"></a>
         </div>
-        <div>
+        <div class="colum1">
             <a href="#">Politicas de privacidad</a>
             <a href="#">Terminos de uso</a>
             <a href="#">FAQ</a>
         </div>
-        <div>
+        <div class="colum2">
             <p>© 2024 FITBODY - CREADO POR SANDRA RUIZ</p>
         </div>
     </footer>
