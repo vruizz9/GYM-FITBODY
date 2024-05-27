@@ -12,7 +12,6 @@
 
 <body>
     <!-- Cabecera de la página -->
-
     <header>
         <!-- Barra de navegación -->
         <nav class="navbar">
@@ -33,13 +32,20 @@
         <div class="login-page">
             <div class="form">
               <form class="login-form">
-                <input type="text" placeholder="Nombre de usuario"/>
-                <input type="password" placeholder="Contraseña"/>
-                <button>login</button>
+                <input type="text" placeholder="Nombre de usuario" required/>
+                <input type="password" placeholder="Contraseña" required/>
+                <button id="btnlogin">login</button>
                 <p class="message">¿Aún no está registrado? <a href="/register.html">Crear una cuenta</a></p>
               </form>
             </div>
         </div>
+        <script>
+            let btnlogin = document.getElementById('btnlogin');
+            btnlogin.addEventListener("click", function(e) {
+                alert("Ha iniciado sesión corectamente.");
+            });
+
+        </script>
     </main>
     <!-- Pie de página -->
     <footer>
