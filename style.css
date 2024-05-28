@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-size: 28px;
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .navbar {
   overflow: hidden;
@@ -466,4 +466,39 @@ footer div img {
 }
 .container .info span .fa {
   color: #EF3B3A;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100rem;
+    }
+    .slogan {
+        width: 100rem;
+        background-attachment: unset;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .area {
+        width: 85%;
+        clip-path: none !important;
+    }
+    .area p {
+        font-size: 25px;
+        padding: 0 40px;
+    }
+    footer {
+        height: 22vh;
+    }
+    #whatsapp {
+        bottom: 125px;
+    }
+}
+@media (max-width: 425px) {
+    body {
+        width: 93.5rem;
+    }
+    .slogan {
+        background-attachment: unset;
+    }
 }
