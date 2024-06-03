@@ -5,20 +5,46 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden !important;
 }
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    font-size: 0;
+    color: transparent;
+    text-decoration: none;
+    white-space: 0;
+    width: 58.58px;
+}
+.btn-outline-success {
+    --bs-btn-color: #000 !important;
+    --bs-btn-border-color: #000 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #ffbf00 !important;
+    --bs-btn-hover-border-color: #ffbf00 !important;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84 !important;
+    --bs-btn-active-color: #000 !important;
+    --bs-btn-active-bg: #ffbf00 !important;
+    --bs-btn-active-border-color: #fff !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #ffbf00 !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: #000 !important;
+    --bs-gradient: none !important;
+}
 .navbar {
   overflow: hidden;
   background-color: #f1f1f1;
 }
-.navbar ul{
+.navbar ul {
     display: flex;
-    margin: 0;
+    margin: 10px;
     justify-content: flex-start;
     padding: 0;
     align-items: center;
 }
 .navbar ul li {
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 16px;
   font-size: 17px;
   list-style-type: none;
   margin: 0 20px;
@@ -72,7 +98,7 @@ circle {
     display: flex;
 }
 .slogan {
-    background-image: url(/resources/pexels-pixabay-50597.jpg);
+    background-image: url(./resources/pexels-pixabay-50597.jpg);
     background-size: cover;
     background-color: rgb(50, 50, 50);
     background-blend-mode: soft-light;
@@ -85,6 +111,14 @@ circle {
     align-items: center;
     justify-content: center;
     position: absolute;
+}
+.slogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .presentation .slogan h1 {
     color: #f1f1f1;
@@ -99,24 +133,25 @@ circle {
     top: -110px;
 }
 .card {
-    width: 75%;
-    height: 26vh;
-    border-radius: 15px;
-    border: 5px solid #f1f1f1;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 25%);
-    background-size: cover;
-    background-color: rgb(255, 191, 0);
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: grayscale(100%);
-    cursor: pointer;
-    justify-self: center;
+    width: 75% !important;
+    height: 26vh !important;
+    border-radius: 15px !important;
+    border: 5px solid #f1f1f1 !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 25%) !important;
+    background-size: cover !important;
+    background-color: rgb(255, 191, 0) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    filter: grayscale(100%) !important;
+    cursor: pointer !important;
+    justify-self: center !important;
 }
 .content {
     height: 26.1vh;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    font-size: 22px;
     font-style: normal;
     color: #f1f1f1;
     margin: 0;
@@ -129,15 +164,16 @@ circle {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    font-size: 22px;
     font-style: normal;
     transition: all .5s;
     color: #f1f1f1;
 }
 .card:hover {
-    background-blend-mode: soft-light;
-    filter: grayscale(50%);
-    transition: all .5s;
-    transition-duration: .5s;
+    background-blend-mode: soft-light !important;
+    filter: grayscale(50%) !important;
+    transition: all .5s !important;
+    transition-duration: .5s !important;
 }
 .content:hover {
     color: #000 !important;
@@ -219,6 +255,7 @@ circle {
     transform-style: preserve-3d;
 }
 .price p {
+    font-size: 20px;
     text-align: -webkit-center;
     font-weight: bold;
     background-color: #ffbf00;
@@ -312,6 +349,7 @@ circle {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+    font-size: 22px;
     font-style: normal;
     color: #f1f1f1;
     margin: 0;
@@ -334,7 +372,7 @@ footer {
     box-shadow: 4px 4px 10px rgba(0,0,0,25%);
     background-color: #000;
     color: #ffbf00;
-    height: 20vh;
+    height: max-content;
 }
 footer .logo2 {
     width: 100%;
@@ -378,11 +416,10 @@ footer div img {
 
 .login-page {
   width: 360px;
-  padding: 5% 0 0;
-  margin: auto;
+  margin: 166.5px auto;
 }
 .form {
-    height: 36vh;
+    height: max-content;
     position: relative;
     z-index: 1;
     background: #fff;
@@ -467,14 +504,38 @@ footer div img {
 .container .info span .fa {
   color: #EF3B3A;
 }
-
+.calendars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 150px auto;
+}
+.calendar {
+    text-align: center;
+    width: 300px;
+}
+.calendar1 {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+.calendar1 li {
+    text-align: right;
+}
+.calendar1 li:hover {
+    font-weight: bold;
+    background: #ffbf00;
+    cursor: pointer;
+}
+.day-name {
+    background: #eee !important;
+    font-weight: bold;
+    text-align: center !important;
+}
 @media (max-width: 768px) {
     body {
         width: 100rem;
-    }
-    .slogan {
-        width: 100rem;
-        background-attachment: unset;
     }
     .text {
         font-size: 18px;
@@ -497,8 +558,5 @@ footer div img {
 @media (max-width: 425px) {
     body {
         width: 93.5rem;
-    }
-    .slogan {
-        background-attachment: unset;
     }
 }
